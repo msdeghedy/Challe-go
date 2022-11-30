@@ -1,0 +1,19 @@
+.auth-modal {
+  .btn-selected {
+    background-color: transparent;
+    cursor: default;
+    color: #36175e;
+    font-weight: 600;
+    &:focus {
+      border: none;
+    }
+  }
+  .btn-unselected {
+    border-color: #36175e;
+    color: #36175e;
+    &:hover {
+      color: #eee;
+      background-color: #36175e;
+    }
+  }
+}

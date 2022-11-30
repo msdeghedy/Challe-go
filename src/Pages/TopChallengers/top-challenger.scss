@@ -1,0 +1,38 @@
+.page-height {
+  height: calc(100vh - 80px);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2c2c2c;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.01);
+}
+::-webkit-scrollbar {
+  background-color: #212121;
+  width: 0.375rem;
+}
+
+// .bg-color {
+//   background: linear-gradient(to bottom, #f22e52 50%, #8a3266 50%);
+// }
+
+.top-challenge {
+  tbody,
+  td,
+  tfoot,
+  th,
+  thead,
+  tr {
+    border: none !important;
+  }
+
+  .vh-50 {
+    height: 70vh;
+  }
+}
+
+.anchor-none {
+  a {
+    display: none;
+  }
+}

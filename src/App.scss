@@ -1,0 +1,58 @@
+.bg-c-grey {
+  background-color: #2a2a2a;
+  transition: all 500ms ease-in-out;
+}
+.bg-c-grey-dark {
+  background-color: #1e1e1e;
+  transition: all 500ms ease-in-out;
+}
+
+.bg-c-grey-lite {
+  background-color: #4e4e4e;
+  transition: all 500ms ease-in-out;
+}
+.bg-c-grey-lite-hover:hover {
+  background-color: #717171;
+}
+.bg-c-grey-hover:hover {
+  background-color: #2c2c2c;
+  transform: scale(1.05);
+}
+
+.text-grey-lite {
+  color: #5a5a5a;
+}
+.text-grey-lite-hover:hover {
+  color: #979797;
+}
+.border-grey-lite {
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.h-250px {
+  height: 250px;
+}
+.bg-blur {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.w-100px {
+  width: 70px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.custom-badge {
+  width: 20px;
+}
+
+* {
+  transition: background-color 0.5s ease-in-out;
+}

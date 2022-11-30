@@ -1,0 +1,9 @@
+.profile {
+  min-height: calc(100vh - 80px);
+  .profile-cover {
+    height: 15vh;
+  }
+  .profile-content {
+    min-height: calc(85vh - 80px);
+  }
+}

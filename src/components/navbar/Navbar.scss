@@ -1,0 +1,205 @@
+$breakpoint: 799px;
+$nav-height: 80px;
+$nav-background: rgba(246, 246, 246, 0);
+$nav-font-color: #ffffff;
+
+.nav {
+  z-index: 1;
+  height: $nav-height;
+  background: $nav-background;
+  padding-top: 10px;
+  left: 0;
+  right: 0;
+  transition: all 0.3 ease-in-out;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      color: #bdbdbd;
+    }
+  }
+  li {
+    position: relative;
+    img {
+      width: 40px;
+    }
+  }
+  ul .link a::before {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #1a8cd8;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+  }
+
+  li:hover a::before,
+  li a.active::before {
+    width: 100%;
+  }
+}
+
+.brand {
+  img {
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  nav {
+    ul {
+      position: fixed;
+      top: -100%;
+      transition: all 0.3s ease-in-out;
+    }
+    ul.show {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: $nav-background;
+      backdrop-filter: blur(10px);
+      z-index: 999;
+    }
+  }
+  #nav-toggle {
+    display: block !important;
+    z-index: 1000;
+  }
+}
+
+#nav-toggle {
+  position: absolute;
+  display: none;
+  right: 20px;
+  top: 30px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #1a8cd8;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+    z-index: 999;
+  }
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.custom-downdown {
+  background-color: red;
+}
+
+.notification {
+  position: relative;
+}
+.notification {
+  font-size: 25px;
+}
+
+$c: #1a8cd8;
+$s: 10px;
+.bill-wrapper {
+  right: 15px;
+  top: 5px;
+}
+div.bill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $s;
+  height: $s;
+  background-color: $c;
+  border-radius: 50%;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: inherit;
+    height: inherit;
+    border: $s/2 solid $c;
+    border-radius: inherit;
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+    animation: 2s expand cubic-bezier(0.29, 0, 0, 1) infinite;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes expand {
+  1% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 750%;
+    height: 750%;
+    opacity: 0;
+    border-color: #fff;
+    background-color: none;
+    border-width: 2px;
+  }
+}
+
+.dropdown-notification {
+  width: 350px !important;
+}
+.form-switch .form-check-input {
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(181, 181, 181);
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
+}
+
+.form-switch .form-check-input:checked {
+  border: none;
+  background-color: black;
+  border: 1px solid white;
+}

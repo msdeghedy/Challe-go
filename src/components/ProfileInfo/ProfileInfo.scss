@@ -1,0 +1,34 @@
+.profile-info {
+  .profile-img {
+    position: relative;
+    transform: translateY(-25%);
+    height: 200px !important;
+    width: 200px !important;
+    img {
+      height: 100% !important;
+      width: 100% !important;
+      object-fit: cover !important;
+    }
+  }
+  .edit-img {
+    height: 200px !important;
+    width: 200px !important;
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .cam-btn {
+    top: 75%;
+    right: 0;
+  }
+
+  .icon-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    &:hover {
+      color: rgb(184, 184, 184) !important;
+    }
+  }
+}

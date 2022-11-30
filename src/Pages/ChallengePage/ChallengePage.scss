@@ -1,0 +1,8 @@
+.challenge-page {
+  height: calc(100vh - 80px);
+  .card-scroll {
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}

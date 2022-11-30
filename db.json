@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Emy Organda",
+      "img": "https://via.placeholder.com/50",
+      "done": 197,
+      "current": 93,
+      "failed": 3,
+      "badges": 100,
+      "points": 3565
+    },
+    {
+      "id": 2,
+      "name": "Mikel Khallga",
+      "img": "https://via.placeholder.com/50",
+      "done": 197,
+      "current": 93,
+      "failed": 3,
+      "badges": 100,
+      "points": 3565
+    },
+    {
+      "id": 4,
+      "name": "Emy Watson",
+      "img": "https://via.placeholder.com/50",
+      "done": 130,
+      "current": 54,
+      "failed": 7,
+      "badges": 50,
+      "points": 2000
+    },
+    {
+      "id": 3,
+      "name": "Emy Organda",
+      "img": "https://via.placeholder.com/50",
+      "done": 130,
+      "current": 54,
+      "failed": 7,
+      "badges": 50,
+      "points": 2500
+    },
+    {
+      "id": 5,
+      "name": "Emy Organda",
+      "img": "https://via.placeholder.com/50",
+      "done": 130,
+      "current": 54,
+      "failed": 7,
+      "badges": 50,
+      "points": 2500
+    },
+    {
+      "id": 6,
+      "name": "Emy Organda",
+      "img": "https://via.placeholder.com/50",
+      "done": 197,
+      "current": 93,
+      "failed": 3,
+      "badges": 100,
+      "points": 500
+    }
+  ]
+}
